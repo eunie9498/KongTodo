@@ -7,9 +7,16 @@
     <color name="deep_blue_04">#003A60</color>
     <color name="deep_blue_05">#004673</color>
     <color name="deep_blue_06">#005186</color>
+    <color name="deep_blue_dark">#001F32</color>
 
+    <color name="greye0">#e0e0e0</color>
+    <color name="greybd">#bdbdbd</color>
+    <color name="greyee">#eeeeee</color>
+    <color name="grey61">#616161</color>
+    <color name="grey75">#757575</color>
+    <color name="grey21">#212121</color>
 
-
+    <color name="own_black">#2B2B2B</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
