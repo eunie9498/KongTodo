@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="addTitle" format="string"/>
+    <attr name="addIcon" format="reference"/>
+    <attr name="addHint" format="string"/>
+
+    <declare-styleable name="TabItem">
+        <attr name="addTitle"/>
+        <attr name="addIcon"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppBar">
+        <attr name="addTitle"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditItem">
+        <attr name="addHint"/>
+    </declare-styleable>
+</resources>

@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">TODO</string>
+    <string name="app_name">뭐할라했더라?</string>
+
+    <string name="tab_home">홈</string>
+    <string name="tab_setting">설정</string>
+    <string name="tab_list">목록</string>
+
+    <string name="todo_yes">네</string>
+    <string name="todo_no">아니요</string>
+    <string name="todo_add">추가</string>
+    <string name="todo_delete">삭제</string>
+    <string name="todo_today">오늘</string>
+    <string name="todo_date">날짜</string>
+    <string name="todo_tag">태그</string>
+
+    <!--추가-->
+    <string name="add_name">할 일</string>
+    <string name="add_importance">중요도</string>
+    <string name="add_daily">매일 반복</string>
+    <string name="add_tag_info">할 일을 태그로 관리해봅시다</string>
+
+    <!--설정-->
+    <string name="delete_all">전부 삭제</string>
+    <string name="alert_delete_all">저장된 모든 할 일을 삭제하시겠어요?</string>
+
+    <!--tag-->
+    <string name="tag_work">업무</string>
+    <string name="tag_study">공부</string>
+    <string name="tag_exercise">운동</string>
+    <string name="tag_house">집안일</string>
+    <string name="tag_shopping">쇼핑</string>
+    <string name="tag_etc">기타</string>
+
 </resources>

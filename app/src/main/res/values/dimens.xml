@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="etVerticalMargin">8dp</dimen>
+    <dimen name="titleMargin">16dp</dimen>
+    <dimen name="bottomMargin">32dp</dimen>
+    <dimen name="topMargin">24dp</dimen>
+    <dimen name="baseElevation">6dp</dimen>
+    <dimen name="radius10">10dp</dimen>
+    <dimen name="radius20">20dp</dimen>
+    <dimen name="radius100">100dp</dimen>
+</resources>
