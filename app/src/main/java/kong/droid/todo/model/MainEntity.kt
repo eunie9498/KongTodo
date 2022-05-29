@@ -20,6 +20,9 @@ class TodoEntity {
 )
 
 class TodoItem {
+    @PrimaryKey
+    var id: Int? = -1
+
     var time: String? = ""
     var name: String? = ""
     var status: String? = ""
