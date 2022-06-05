@@ -5,10 +5,14 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
 }
+//for safeargs
+apply plugin:"androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdk 32
-
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8 }
     defaultConfig {
         applicationId "kong.droid.todo"
         minSdk 21
@@ -65,7 +69,16 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
 
+    // optional - RxJava2 support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
+
+    // optional - RxJava3 support for Room
+    implementation "androidx.room:room-rxjava3:$room_version"
+
+    kapt "androidx.room:room-compiler:2.4.2"
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    kapt "android.arch.lifecycle:compiler:1.1.1"
+    kapt "android.arch.persistence.room:compiler:1.1.1"
 
     //for firebase
     implementation platform('com.google.firebase:firebase-bom:30.0.1')
@@ -78,4 +91,13 @@ dependencies {
     implementation 'androidx.paging:paging-runtime-ktx:3.1.1'
     implementation 'androidx.paging:paging-common-ktx:3.1.1'
     implementation 'androidx.paging:paging-rxjava2-ktx:3.1.1'
+
+    //for navigation
+    def navi_version = "2.4.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navi_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navi_version"
+
+    // for joda
+    implementation 'net.danlew:android.joda:2.10.14'
+
 }
