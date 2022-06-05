@@ -13,6 +13,8 @@
     <string name="todo_date">날짜</string>
     <string name="todo_tag">태그</string>
 
+    <string name="one_more_back">한번 더 누르시면 앱이 종료됩니다.</string>
+
     <!--추가-->
     <string name="add_name">할 일</string>
     <string name="add_importance">중요도</string>

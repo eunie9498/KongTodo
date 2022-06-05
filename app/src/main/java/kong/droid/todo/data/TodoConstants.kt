@@ -7,4 +7,7 @@ object TodoConstants {
     val RECOM2 = "오늘 할 일은 무엇인가요?🧐"
     val RECOM3 = "아무것도 하지 않는 날도\n있기 마련이에요😌"
     val RECOM4 = "🌊 부담을 내려놓고\n잠깐 쉬어가도 좋아요"
+
+    val BACK_PRESSED = 0
+    val BACK_PRESSED_TIME = 2000L
 }
