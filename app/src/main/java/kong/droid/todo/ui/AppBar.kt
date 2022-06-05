@@ -15,6 +15,7 @@ class AppBar(
 
     init {
         val a = context.obtainStyledAttributes(attrs, R.styleable.AppBar)
+
         if(a.hasValue(R.styleable.AppBar_addTitle)) {
             appBinding.tvTitle.text = a.getText(R.styleable.AppBar_addTitle)
         }
