@@ -101,10 +101,10 @@ dependencies {
     implementation 'net.danlew:android.joda:2.10.14'
 
     //koin
-    implementation 'org.koin:koin-android:2.1.5'
-    implementation 'org.koin:koin-android-scope:2.1.5'
-    implementation 'org.koin:koin-android:viewmodel:2.1.5'
-    implementation 'org.koin:koin-android-ext:2.1.5'
-    testImplementation 'org.koin:koin-test:2.1.5'
+    implementation "org.koin:koin-android:2.1.5"
+    implementation "org.koin:koin-android-scope:2.1.5"
+    implementation "org.koin:koin-android:viewmodel:2.1.5"
+    implementation "org.koin:koin-android-ext:2.1.5"
+    testImplementation "org.koin:koin-test:2.1.5"
 
 }
