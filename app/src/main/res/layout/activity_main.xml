@@ -8,6 +8,14 @@
         <import type="android.view.View" />
 
         <variable
+            name="pagerAdapter"
+            type="androidx.viewpager2.adapter.FragmentStateAdapter" />
+
+        <variable
+            name="viewModel"
+            type="kong.droid.todo.viewModel.MainViewModel" />
+
+        <variable
             name="activity"
             type="kong.droid.todo.view.main.MainActivity" />
     </data>
@@ -41,14 +49,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <FrameLayout
-            android:id="@+id/fragContainer"
-            android:layout_width="0dp"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:orientation="horizontal"
+            android:adapter="@{pagerAdapter}"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@id/tabBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/greye0"
+            app:layout_constraintBottom_toTopOf="@+id/tabBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
             android:id="@+id/tabBar"
