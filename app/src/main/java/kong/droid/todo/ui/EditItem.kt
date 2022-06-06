@@ -16,7 +16,7 @@ class EditItem(
     init {
         val a = context.obtainStyledAttributes(R.styleable.EditItem)
         if (a.hasValue(R.styleable.EditItem_addHint)) {
-            editBinding.etItem.hint = a.getText(R.styleable.EditItem_addHint)
+            editBinding.etContainer.hint = a.getText(R.styleable.EditItem_addHint)
         }
         a.recycle()
     }

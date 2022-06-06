@@ -9,13 +9,28 @@
 
         <variable
             name="activity"
-            type="kong.droid.todo.view.MainActivity" />
+            type="kong.droid.todo.view.main.MainActivity" />
     </data>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.MainActivity">
+        tools:context=".view.main.MainActivity">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="80dp"
+            android:background="@color/deep_blue_05"
+            app:fabSize="auto"
+            app:srcCompat="@drawable/ic_float_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white" />
+
 
         <kong.droid.todo.ui.AppBar
             android:id="@+id/appBar"
