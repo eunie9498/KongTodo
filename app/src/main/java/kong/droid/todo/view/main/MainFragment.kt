@@ -1,4 +1,4 @@
-package kong.droid.todo.view
+package kong.droid.todo.view.main
 
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider

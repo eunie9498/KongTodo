@@ -7,7 +7,7 @@
 
     <string name="todo_yes">네</string>
     <string name="todo_no">아니요</string>
-    <string name="todo_add">추가</string>
+    <string name="todo_add">추가 ✅</string>
     <string name="todo_delete">삭제</string>
     <string name="todo_today">오늘</string>
     <string name="todo_date">날짜</string>
@@ -19,7 +19,8 @@
     <string name="add_name">할 일</string>
     <string name="add_importance">중요도</string>
     <string name="add_daily">매일 반복</string>
-    <string name="add_tag_info">할 일을 태그로 관리해봅시다</string>
+    <string name="add_tag_info">태그 ✍️</string>
+
 
     <!--설정-->
     <string name="delete_all">전부 삭제</string>

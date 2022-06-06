@@ -1,19 +1,12 @@
-package kong.droid.todo.view
+package kong.droid.todo.view.main
 
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import android.view.View
-import androidx.databinding.BindingAdapter
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import kong.droid.todo.BaseActivity
 import kong.droid.todo.R
 import kong.droid.todo.data.TodoConstants
 import kong.droid.todo.databinding.ActivityMainBinding
-import kong.droid.todo.model.Todo
-import kong.droid.todo.ui.TabItem
-import kong.droid.todo.viewModel.MainViewModel
 
 class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     var isBackPressed = false
