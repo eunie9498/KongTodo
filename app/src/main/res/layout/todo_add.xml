@@ -7,7 +7,7 @@
     android:background="@drawable/top_rounded"
     tools:ignore="MissingDefaultResource">
 
-    <kong.droid.todo.ui.EditItem
+    <kong.droid.todo.customui.EditItem
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

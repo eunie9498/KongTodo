@@ -1,11 +1,10 @@
-package kong.droid.todo.ui
+package kong.droid.todo.customui
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
 import kong.droid.todo.R
 import kong.droid.todo.databinding.TabItemBinding
 

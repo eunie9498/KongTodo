@@ -33,14 +33,15 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="80dp"
             android:background="@color/deep_blue_05"
+            android:onClick="@{(v)->viewModel.clickBtn(v)}"
             app:fabSize="auto"
-            app:srcCompat="@drawable/ic_float_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_float_add"
             app:tint="@android:color/white" />
 
 
-        <kong.droid.todo.ui.AppBar
+        <kong.droid.todo.customui.AppBar
             android:id="@+id/appBar"
             android:layout_width="0dp"
             android:layout_height="56dp"
@@ -77,7 +78,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <kong.droid.todo.ui.TabItem
+            <kong.droid.todo.customui.TabItem
                 android:id="@+id/home"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -85,7 +86,7 @@
                 app:addIcon="@drawable/ic_home_selector"
                 app:addTitle="@string/tab_home" />
 
-            <kong.droid.todo.ui.TabItem
+            <kong.droid.todo.customui.TabItem
                 android:id="@+id/list"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -93,7 +94,7 @@
                 app:addIcon="@drawable/ic_list_selector"
                 app:addTitle="@string/tab_list" />
 
-            <kong.droid.todo.ui.TabItem
+            <kong.droid.todo.customui.TabItem
                 android:id="@+id/setting"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

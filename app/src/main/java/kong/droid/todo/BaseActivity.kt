@@ -7,7 +7,9 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.ViewModelProvider
 import kong.droid.todo.data.MainDB
+import kong.droid.todo.viewModel.MainViewModel
 import kotlin.system.exitProcess
 
 
@@ -16,6 +18,7 @@ abstract class BaseActivity<T: ViewDataBinding> (
 
     lateinit var binding : T
     lateinit var db: MainDB
+    lateinit var mainViewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +26,7 @@ abstract class BaseActivity<T: ViewDataBinding> (
         binding = DataBindingUtil.setContentView(this, resID)
         binding.lifecycleOwner = this
         db = MainDB.getInstance(this)
-
+        mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         initView()
     }
 

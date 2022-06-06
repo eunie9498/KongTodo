@@ -9,15 +9,19 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.room.Room
 import kong.droid.todo.data.MainDB
 import kong.droid.todo.data.MainDao
+import kong.droid.todo.viewModel.MainViewModel
 
 abstract class BaseFragment<T : ViewDataBinding>(
     @LayoutRes val layoutId: Int
 ) : Fragment() {
     lateinit var binding: T
     lateinit var db: MainDB
+    lateinit var mainViewModel: MainViewModel
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -30,7 +34,7 @@ abstract class BaseFragment<T : ViewDataBinding>(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.lifecycleOwner = this
-
+        mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         db = MainDB.getInstance(requireContext())
 
         init()

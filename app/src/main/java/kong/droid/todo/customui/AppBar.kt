@@ -1,4 +1,4 @@
-package kong.droid.todo.ui
+package kong.droid.todo.customui
 
 import android.content.Context
 import android.util.AttributeSet
