@@ -1,10 +1,13 @@
 buildscript {
+    ext.koin_version="3.0.2"
     repositories {
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.google.gms:google-services:4.3.10'
         classpath 'androidx.navigation:navigation-safe-args-gradle-plugin:2.4.2'
+        classpath "io.insert-koin:koin-gradle-plugin:$koin_version"
     }
 }
 
